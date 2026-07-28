@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Vinculação do Css externo-->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+     <!-- Cabeçalho-->
+    <header class="header" id="Home">
+<h1>Maria Flor</h1> 
+<nav class="nav-menu">
+    <ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#produtos">Produtos</a></li>
+<li><a href="sobre">Sobre</a></li>
+<li><a href="#contato">Contato</a></li>
+
+</ul>
+</nav>
+</header>
+
+<main>
+
+<!--Banner promocional-->
+<section class="banner" arial-label="Destaque Principal">
+<h2>Promoções Imperdíveis</h2>
+<p>Os melhores produtos com os melhores preço.</p>
+
+</section>
+      
+<!-- Produtos com imagem -->
+<section id="produtos">
+<h2>Produtos</h2>
+
+<article class="product">
+<h3> Sueter marrom</h3>
+<img
+src="./img/img.webp"
+alt="Sueter marrom de gola alta, feito em tricô"
+width="200"
+height="200"
+loading="lazy"
+class="product-image">
+<p> Feito com tecido quentinho e comfortável</p>
+</article>
+
+
+
+<article class="product">
+<h4> Vestido longo azul</h4>
+<img
+src="./img/Imagem.webp"
+alt="Vestido longo azul, bem confortável"
+width="200"
+height="200"
+loading="lazy"
+class="product-image">
+<p> Vestido elegante e comfortável</p>
+</article>
+
+
+
+<article class="product">
+<h5> Calça jeans </h5>
+<img
+src="./img/images.jpg"
+alt="Jeans confortável e elegante"
+width="200"
+height="200"
+loading="lazy"
+class="product-image">
+<p> Jeans confortável e charmoso</p>
+</article>
+
+</section>
+
+
+<!---Sobre-->
+    <section id="sobre" class="about">
+        
+
+    <!--Video promocional-->
+    <section class="promo-video"></section>
+    <h2>Conheça nossa Loja</h2>
+    <video controls width="300">
+    <source src="https://www.youtube.com/embed/Hmp93kMClUI?si=54E-G_0O9aYSrhpP" 
+    type="video/mp4">
+
+    </video>
+    </section>
+
+    <!--Localização com video-->
+    <section class="location">
+    <h2>Nossa Localização</h2>
+    <iframe
+    src="https://www.youtube.com/embed/a4cA0ET9DRY?si=WXRjD9ngmuBGpHN7" 
+    width="300" height="300" title="Vídeo externo">
+    </iframe>
+    <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6249.571855
+ 1402415!2d-43.20067162297481!3d-22.909948079252946!2m3!1f0!2f0!3f0
+ !3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f0c4e687185%3A0x973c7a140b
+ 9b61fa!2sEdif%C3%ADcio%20Eco%20Sapuca%C3%AD!5e1!3m2!1spt-BR!2sbr!4
+ v1776867085334!5m2!1spt-BR!2sbr"
+    width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade" width="300" height="200"
+    title="Maps">>
+
+    </iframe>
+
+    </section>
+    <h2>Sobre a Loja</h2>
+    <p>Somos uma loja dedicada a oferecer produtos de qualidade com os preços.</p>
+
+</section>
+
+<!-- Formulário -->
+<section id="=Contato">
+<h2>Cadastro / Contato</h2>
+
+<form class="form-contact" id="form-contact" action="/enviar">
+<fieldset>
+<legend>Dados de Usuarios</legend>
+
+<label for="nome">Nome:</label>
+<input type="text" id="nome" name="nome" require placeholder="Digite seu nome... " minlength="3">
+
+ 
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required placeholder="Digite seu email...">
+
+<label for="senha">Senha:</label>
+ <input type="senha" id="senha" name="email" required minlength="8">
+
+  <label for=" idade">Idade:</label>
+<input type="senha" id="senha" name="senha" required min="18" max="120">
+
+<label></label>
+
+</fieldset>
+<!--Caixa de interações-->
+<fieldset>
+<legend>Preferências</legend>
+
+<label for="categoria">Categoria de interrese</label>
+<select id="categoria" name="categoria" required>
+<option value=""select disabled>Selecione...</option>
+<option value="calças">Calças</option>
+<option value="vestidos">Roupas</option>
+<option value="acessorios">Acessorios</option>
+
+    </select>
+
+<p>Preferências</p>
+<input type="checkbox" name="pref" id="promo" value="promo">
+<label for="promo">Receber promoções</label>
+
+<input type="checkbox" name="pref" id="novidades" value="novidades">
+<label for="novidades">Receber novidades</label>
+
+<p>Tipo  de cliente:</p>
+<input type="radio" id="pf" name="tipo" value="pf" required>
+<label for="pf">Pessoa Física</label>
+
+<input type="radio" id="pj" name="tipo" value="pj">
+<label for="pj">Pessoa Jurídica</label>
+
+</fieldset>
+
+<label for="mensagem">Mensagem</label>
+<textarea id="mensagem" name="mensagem" rows="4" placeholderDigite sua mensagem...>
+
+</textarea>
+
+                <button type="submit">Enviar</button>
+
+ </form>
+
+</section>
+        
+
+ </main>
+    <footer class="footer">
+        Tel: (21)9784-3986<br>
+      cidade nova 200<br>
+        &copy;2026 direitos reservados
+    </footer>
+</body>
+</html>

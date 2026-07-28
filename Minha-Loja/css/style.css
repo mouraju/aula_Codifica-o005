@@ -1,0 +1,56 @@
+/* reset */
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* Corpo da página*/
+body{
+    font-family: Arial, sans-serif;
+    background-color: #ece8e1e7;
+    color:#333;
+}
+/*Cabeçalho*/
+.header{
+    background-color: #b994d6;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/*banner*/
+.banner{
+background-color:#b994d6;
+padding: 20px;
+margin: 20px;
+border-radius: 8px
+}
+
+/* Seção de Produtos*/
+.products{
+    margin: 20px;
+}
+
+/*cards produtos*/
+.product{
+    background-color: #e6d3f7;
+    border: #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+/*titulos*/
+h2{
+    margin: 10px;
+}
+
+/*Rodape*/
+.footer{
+    background-color: #b994d6;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
