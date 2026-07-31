@@ -9,18 +9,18 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-     <!-- Cabeçalho-->
-    <header class="header" id="Home">
-<h1>Maria Flor</h1> 
-<nav class="nav-menu">
-    <ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#produtos">Produtos</a></li>
-<li><a href="sobre">Sobre</a></li>
-<li><a href="#contato">Contato</a></li>
+    <!-- Cabeçalho-->
+<header class="header" id="Home">
+    <h1>Maria Flor</h1> 
+    <nav class="nav-menu">
+       <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#produtos">Produtos</a></li>
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#contato">Contato</a></li>
 
-</ul>
-</nav>
+    </ul>
+    </nav>
 </header>
 
 <main>
@@ -45,10 +45,9 @@ width="200"
 height="200"
 loading="lazy"
 class="product-image">
-<p> Feito com tecido quentinho e comfortável</p>
+<p> Feito com tecido quentinho e confortável</p>
+<p class="bagde-novo">Novo!</p>
 </article>
-
-
 
 <article class="product">
 <h4> Vestido longo azul</h4>
@@ -59,21 +58,20 @@ width="200"
 height="200"
 loading="lazy"
 class="product-image">
-<p> Vestido elegante e comfortável</p>
+<p> Vestido elegante e confortável</p>
+
 </article>
-
-
 
 <article class="product">
 <h5> Calça jeans </h5>
 <img
-src="./img/images.jpg"
-alt="Jeans confortável e elegante"
+src="./img/images.jpg"alt="Jeans confortável e elegante"
 width="200"
 height="200"
 loading="lazy"
 class="product-image">
 <p> Jeans confortável e charmoso</p>
+
 </article>
 
 </section>
@@ -102,10 +100,11 @@ class="product-image">
     </iframe>
     <iframe
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6249.571855
- 1402415!2d-43.20067162297481!3d-22.909948079252946!2m3!1f0!2f0!3f0
- !3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f0c4e687185%3A0x973c7a140b
- 9b61fa!2sEdif%C3%ADcio%20Eco%20Sapuca%C3%AD!5e1!3m2!1spt-BR!2sbr!4
- v1776867085334!5m2!1spt-BR!2sbr"
+1402415!2d-43.20067162297481!3d-22.909948079252946!2m3!1f0!2f0!3f0
+!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f0c4e687185%3A0x973c7a140b
+9b61fa!2sEdif%C3%ADcio%20Eco%20Sapuca%C3%AD!5e1!3m2!1spt-BR!2sbr!4
+v1776867085334!5m2!1spt-BR!2sbr"
+
     width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
     referrerpolicy="no-referrer-when-downgrade" width="300" height="200"
     title="Maps">>
@@ -119,25 +118,25 @@ class="product-image">
 </section>
 
 <!-- Formulário -->
-<section id="=Contato">
-<h2>Cadastro / Contato</h2>
+<section id="=contato">
+<h3>Cadastro/Contato</h3>
 
 <form class="form-contact" id="form-contact" action="/enviar">
 <fieldset>
 <legend>Dados de Usuarios</legend>
 
 <label for="nome">Nome:</label>
-<input type="text" id="nome" name="nome" require placeholder="Digite seu nome... " minlength="3">
+<input type="text" id="nome" name="nome" required placeholder="Digite seu nome... " minlength="3">
 
  
 <label for="email">Email:</label>
 <input type="email" id="email" name="email" required placeholder="Digite seu email...">
 
 <label for="senha">Senha:</label>
- <input type="senha" id="senha" name="email" required minlength="8">
+ <input type="password" id="senha" name="email" required minlength="8">
 
   <label for=" idade">Idade:</label>
-<input type="senha" id="senha" name="senha" required min="18" max="120">
+<input type="number" id="idade" name="idade" required min="18" max="120">
 
 <label></label>
 
@@ -148,7 +147,7 @@ class="product-image">
 
 <label for="categoria">Categoria de interrese</label>
 <select id="categoria" name="categoria" required>
-<option value=""select disabled>Selecione...</option>
+<option value="" select disabled>Selecione...</option>
 <option value="calças">Calças</option>
 <option value="vestidos">Roupas</option>
 <option value="acessorios">Acessorios</option>
@@ -184,7 +183,7 @@ class="product-image">
         
 
  </main>
-    <footer class="footer">
+    <footer class="footer" id="contato">
         Tel: (21)9784-3986<br>
       cidade nova 200<br>
         &copy;2026 direitos reservados

@@ -8,49 +8,116 @@ box-sizing: border-box;
 /* Corpo da página*/
 body{
     font-family: Arial, sans-serif;
-    background-color: #ece8e1e7;
-    color:#333;
+    background-color: #f5f3efe7;
+   
 }
-/*Cabeçalho*/
+/*Cabeçalho fixo*/
 .header{
-    background-color: #b994d6;
-    color: white;
-    padding: 20px;
-    text-align: center;
+    background-color:#d7d8f4;
+    color: #000000;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    
+
 }
 
 /*banner*/
 .banner{
-background-color:#b994d6;
-padding: 20px;
+background-color:#b6b7e4d6;
+padding: 20px; 
 margin: 20px;
-border-radius: 8px
+border-radius: 8px;
+text-align: center;
+}
+
+main{
+    margin-top: 100px;
 }
 
 /* Seção de Produtos*/
 .products{
-    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+   /* margin: 20px;*/
 }
 
-/*cards produtos*/
+
+/*cards produtos lado a lado*/
 .product{
-    background-color: #e6d3f7;
-    border: #ddd;
+   /* position: relative;*/
+   /* display: inline-block;*/
+   /* width: 45%;*/
+    background-color: #ffffff;
+    border: 1px solid #ddd;
     padding: 15px;
-    margin-bottom: 15px;
+    width: 250px;
     border-radius: 5px;
+    text-align: center;
+   /* margin: 10px;*/
+    /*vertical-align: top; */
+
 }
+
+/* bagde NOVO*/
+/*.bagde-novo{
+position: absolute;
+top: 5px;
+right: 5px;
+border: 1px solid #ffffff;
+background-color: #cd1818;
+color: #000000;
+border-radius: 5px;
+padding: 2px;
+}/*
+
+/*product hover*/
+.product:hover{
+transform: scale(1.05);
+border-color: #989ada;
+}
+
 
 /*titulos*/
 h2{
-    margin: 10px;
+margin-bottom: 10px;
+    
 }
 
 /*Rodape*/
 .footer{
-    background-color: #b994d6;
-    color: white;
+    background-color: #b6b7e4d6;
+    color: #000000;
     text-align: center;
     padding: 15px;
     margin-top: 20px;
+}
+
+/*menu horizontal flex*/
+.nav-menu ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 10px;
+}
+
+
+
+.nav-menu  li{
+margin: 0 15px;
+    
+}
+
+.nav-menu a{
+    color:white;
+    text-decoration: none;
+}
+
+/*hover do menu*/
+.nav-menu a:hover{
+    text-decoration: underline;
 }
