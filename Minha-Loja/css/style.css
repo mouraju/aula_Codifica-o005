@@ -20,8 +20,6 @@ body{
     width: 100%;
     top: 0;
     z-index: 1000;
-    
-
 }
 
 /*banner*/
@@ -38,33 +36,33 @@ main{
 }
 
 /* Seção de Produtos*/
-.products{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-   /* margin: 20px;*/
-}
+    .produtos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    /* margin: 20px;*/
+    }
 
 
-/*cards produtos lado a lado*/
-.product{
-   /* position: relative;*/
-   /* display: inline-block;*/
-   /* width: 45%;*/
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    padding: 15px;
-    width: 250px;
-    border-radius: 5px;
-    text-align: center;
-   /* margin: 10px;*/
-    /*vertical-align: top; */
+    /*cards produtos lado a lado*/
+    .product-card{
+        /*position: relative*/
+        display: inline-block;
+        /* width: 45%;*/
+        background-color: #ffffff;
+        border: 1px solid #ddd;
+        padding: 15px;
+        width: 250px;
+        border-radius: 5px;
+        text-align: center;
+    /* margin: 10px;*/
+        /*vertical-align: top; */
 
 }
 
 /* bagde NOVO*/
-/*.bagde-novo{
+.bagde-novo{
 position: absolute;
 top: 5px;
 right: 5px;
@@ -73,7 +71,7 @@ background-color: #cd1818;
 color: #000000;
 border-radius: 5px;
 padding: 2px;
-}/*
+}
 
 /*product hover*/
 .product:hover{
@@ -81,12 +79,26 @@ transform: scale(1.05);
 border-color: #989ada;
 }
 
-
-/*titulos*/
-h2{
-margin-bottom: 10px;
-    
+@media (min-width: 1024px) {
+.products {
+grid-template-columns: repeat(3, 1fr);
 }
+}
+
+
+@media (min-width: 768px) {
+.products {
+grid-template-columns: repeat(3, 1fr);
+}
+}
+
+@media (max-width: 768px) {
+.produtos-grid {
+grid: template columns 1fr;
+}
+}
+
+
 
 /*Rodape*/
 .footer{
@@ -109,7 +121,6 @@ margin-bottom: 10px;
 
 .nav-menu  li{
 margin: 0 15px;
-    
 }
 
 .nav-menu a{
@@ -121,3 +132,4 @@ margin: 0 15px;
 .nav-menu a:hover{
     text-decoration: underline;
 }
+

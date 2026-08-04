@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>minha loja online</title>
 
     <!--Vinculação do Css externo-->
     <link rel="stylesheet" href="./css/style.css">
@@ -33,10 +33,10 @@
 </section>
       
 <!-- Produtos com imagem -->
-<section id="produtos">
+<section id="product">
 <h2>Produtos</h2>
 
-<article class="product">
+<article class="product-card">
 <h3> Sueter marrom</h3>
 <img
 src="./img/img.webp"
@@ -45,11 +45,13 @@ width="200"
 height="200"
 loading="lazy"
 class="product-image">
-<p> Feito com tecido quentinho e confortável</p>
-<p class="bagde-novo">Novo!</p>
+<p> Quentinho confortavél </p>
+ <button type="submit">Comprar</button>
+
 </article>
 
-<article class="product">
+
+<article class="product-card">
 <h4> Vestido longo azul</h4>
 <img
 src="./img/Imagem.webp"
@@ -59,20 +61,24 @@ height="200"
 loading="lazy"
 class="product-image">
 <p> Vestido elegante e confortável</p>
-
+   <button type="submit">Comprar</button>
 </article>
 
-<article class="product">
+
+<article class="product-card">
 <h5> Calça jeans </h5>
 <img
-src="./img/images.jpg"alt="Jeans confortável e elegante"
+src="./img/images.jpg"
+alt="Jeans confortável e elegante"
 width="200"
 height="200"
 loading="lazy"
 class="product-image">
 <p> Jeans confortável e charmoso</p>
-
+ <button type="submit">Comprar</button>
 </article>
+
+
 
 </section>
 
@@ -82,12 +88,12 @@ class="product-image">
         
 
     <!--Video promocional-->
-    <section class="promo-video"></section>
+    <section class="promo-video">
     <h2>Conheça nossa Loja</h2>
     <video controls width="300">
     <source src="https://www.youtube.com/embed/Hmp93kMClUI?si=54E-G_0O9aYSrhpP" 
     type="video/mp4">
-
+    seu navegador não suporta o vídeo.
     </video>
     </section>
 
@@ -96,7 +102,7 @@ class="product-image">
     <h2>Nossa Localização</h2>
     <iframe
     src="https://www.youtube.com/embed/a4cA0ET9DRY?si=WXRjD9ngmuBGpHN7" 
-    width="300" height="300" title="Vídeo externo">
+    width="300" height="150" title="Vídeo externo">    
     </iframe>
     <iframe
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6249.571855
@@ -106,7 +112,7 @@ class="product-image">
 v1776867085334!5m2!1spt-BR!2sbr"
 
     width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade" width="300" height="200"
+    referrerpolicy="no-referrer-when-downgrade" width="300" height="150"
     title="Maps">>
 
     </iframe>
