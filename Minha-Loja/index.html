@@ -1,194 +1,140 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>minha loja online</title>
-
-    <!--Vinculação do Css externo-->
+    <!--link com CSS externo-->
     <link rel="stylesheet" href="./css/style.css">
+    <title>Recanto do Papel</title>
 </head>
+
 <body>
-    <!-- Cabeçalho-->
-<header class="header" id="Home">
-    <h1>Maria Flor</h1> 
-    <nav class="nav-menu">
-       <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#produtos">Produtos</a></li>
-    <li><a href="#sobre">Sobre</a></li>
-    <li><a href="#contato">Contato</a></li>
+    <!--Cabeçalho-->
+    <header class="header">
+        <h1>Recanto do Papel</h1>
 
-    </ul>
-    </nav>
-</header>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
 
-<main>
+        <section class="mini-cart">
+            <span>🛒</span>
 
-<!--Banner promocional-->
-<section class="banner" arial-label="Destaque Principal">
-<h2>Promoções Imperdíveis</h2>
-<p>Os melhores produtos com os melhores preço.</p>
+            <span id="cart-count">0</span>
+            <section class="mini-cart-dropdown" id="mini-cart-dropdown">
+                <ul id="mini-cart-list"></ul>
 
-</section>
-      
-<!-- Produtos com imagem -->
-<section id="product">
-<h2>Produtos</h2>
+                <p id="mini-total">Total: R$ 0</p>
+            </section>
+        </section>
 
-<article class="product-card">
-<h3> Sueter marrom</h3>
-<img
-src="./img/img.webp"
-alt="Sueter marrom de gola alta, feito em tricô"
-width="200"
-height="200"
-loading="lazy"
-class="product-image">
-<p> Quentinho e confortavél </p>
-</article>
+    </header>
+    
+    <main id="home">
+        <!--Banner-->
+        <section class="banner" aria-label="Destaque principal">
+            <h2>Promoções Imperdíveis</h2>
+            <p>Os melhores produtos com os melhores preços!</p>
+        </section>
 
+        <section class="products">
+            <h2>Produtos</h2>
+            <section id="product-list" class="products"></section>
+        </section>
 
-<article class="product-card">
-<h4> Vestido longo azul</h4>
-<img
-src="./img/Imagem.webp"
-alt="Vestido longo azul, bem confortável"
-width="200"
-height="200"
-loading="lazy"
-class="product-image">
-<p> Vestido elegante e confortável</p>
-</article>
+        Produtos com imagem
+        <section class="products">
+            <article class="product-card">
+                <h3>Borracha</h3>
+                <img src="./img/borracha.jpg" alt="Borracha escolar">
+                <p>disponível em várias cores</p>
+                <button class="bnt">Comprar</button>
+            </article>
 
+            <article class="product-card">
+                <h3>Lápis de cor</h3>
+                <img src="./img/lapis-de-cor.webp" alt="Lápis de cor">
+                <p>Lápis de cor em tons pastéis</p>
+                <button class="bnt">Comprar</button>
+            </article>
 
-<article class="product-card">
-<h5> Calça jeans </h5>
-<img
-src="./img/images.jpg"
-alt="Jeans confortável e elegante"
-width="200"
-height="200"
-loading="lazy"
-class="product-image">
-<p> Jeans confortável e charmoso</p>
-</article>
+            <article class="product-card">
+                <h3>Caderno</h3>
+                <img src="./img/images.jpg" alt="Caderno universitário">
+                <p>Caderno com 80 folhas</p>
+                <button class="bnt">Comprar</button>
+            </article>
+        </section>
+        <section class="cart">
+            <h2>Carrinho</h2>
+            <ul id="cart-list"></ul>
 
+            <p id="total">Total: R$ 0</p>
+            <button id="finalizar-compra">Finalizar Compra</button>
 
+            <p id="mensagem-compra"></p>
+        </section>
 
-</section>
+        <!-- Sobre -->
+         <section id="sobre" class="about">
+            <section class="about-content">
+                <!-- Vídeo promocional -->
+                 <section class="promo-video">
+                    <h2>Conheça nossa loja</h2>
+                    <video controls width="500">
+                        <source src="img/video.mp4" type="video/mp4">
+                    </video>
+                 </section>
+                 <!-- Integração com iframe -->
+                  <section class="location">
+                    <h3>Nossa Localização</h3>
+                    <iframe src="https://www.youtube.com/embed/a4cA0ET9DRY?si=WXRjD9ngmuBGpHN7"
+                    width="300" height="200"
+                    title="Vídeo externo">
+                </iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7350.493853943789!2d-43.184188899999995!3d-22.9042614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f67f954a7af%3A0xbf31535326672663!2sR.%20Sr.%20dos%20Passos%20-%20Centro%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1786728781411!5m2!1spt-BR!2sbr"
+                        width="300" height="200" style="border:0;" allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" width="300" height
+                        ="200" title="Maps">
+                </iframe>
+                </section>
+            </section>
+            <h2 class="about-title">Sobre a Loja</h2>
+            <p class="about-text">Somos uma loja dedicada a oferecer produtos de qualidade com os melhores preços.</p>
+         </section>
 
+         <!-- Contato -->
+         <section id="contato" class="contact">
+            <h2>Contato</h2>
+            <form aria-label="Formulário de contato">
+               <label for="nome">Nome:</label> 
+               <input type="text" id="nome" required>
 
-<!---Sobre-->
-    <section id="sobre" class="about">
-        
+               <label for="email">Email:</label>
+               <input type="email" id="email" required>
 
-    <!--Video promocional-->
-    <section class="promo-video">
-    <h2>Conheça nossa Loja</h2>
-    <video controls width="300">
-    <source src="https://www.youtube.com/embed/Hmp93kMClUI?si=54E-G_0O9aYSrhpP" 
-    type="video/mp4">
-    seu navegador não suporta o vídeo.
-    </video>
-    </section>
+               <button type="submit">Enviar</button>
+            </form>
+        <p id="mensagem"></p>
+         </section>
+         <hr>
+         <section class="todo">
+            <h2>lista de tarefas</h2>
+            <input type="text" id="nova-tarefa" placeholder="Digite uma Tarefa">
+            <button id="adicionar">Adicionar</button>
+         </section>
+    </main>
 
-    <!--Localização com video-->
-    <section class="location">
-    <h2>Nossa Localização</h2>
-    <iframe
-    src="https://www.youtube.com/embed/a4cA0ET9DRY?si=WXRjD9ngmuBGpHN7" 
-    width="300" height="150" title="Vídeo externo">    
-    </iframe>
-    <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6249.571855
-1402415!2d-43.20067162297481!3d-22.909948079252946!2m3!1f0!2f0!3f0
-!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f0c4e687185%3A0x973c7a140b
-9b61fa!2sEdif%C3%ADcio%20Eco%20Sapuca%C3%AD!5e1!3m2!1spt-BR!2sbr!4
-v1776867085334!5m2!1spt-BR!2sbr"
-
-    width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade" width="300" height="150"
-    title="Maps">>
-
-    </iframe>
-
-    </section>
-    <h2>Sobre a Loja</h2>
-    <p>Somos uma loja dedicada a oferecer produtos de qualidade com os preços.</p>
-
-</section>
-
-<!-- Formulário -->
-<section id="=contato">
-<h3>Cadastro/Contato</h3>
-
-<form class="form-contact" id="form-contact" action="/enviar">
-<fieldset>
-<legend>Dados de Usuarios</legend>
-
-<label for="nome">Nome:</label>
-<input type="text" id="nome" name="nome" required placeholder="Digite seu nome... " minlength="3">
-
- 
-<label for="email">Email:</label>
-<input type="email" id="email" name="email" required placeholder="Digite seu email...">
-
-<label for="senha">Senha:</label>
- <input type="password" id="senha" name="email" required minlength="8">
-
-  <label for=" idade">Idade:</label>
-<input type="number" id="idade" name="idade" required min="18" max="120">
-
-<label></label>
-
-</fieldset>
-<!--Caixa de interações-->
-<fieldset>
-<legend>Preferências</legend>
-
-<label for="categoria">Categoria de interrese</label>
-<select id="categoria" name="categoria" required>
-<option value="" select disabled>Selecione...</option>
-<option value="calças">Calças</option>
-<option value="vestidos">Roupas</option>
-<option value="acessorios">Acessorios</option>
-
-    </select>
-
-<p>Preferências</p>
-<input type="checkbox" name="pref" id="promo" value="promo">
-<label for="promo">Receber promoções</label>
-
-<input type="checkbox" name="pref" id="novidades" value="novidades">
-<label for="novidades">Receber novidades</label>
-
-<p>Tipo  de cliente:</p>
-<input type="radio" id="pf" name="tipo" value="pf" required>
-<label for="pf">Pessoa Física</label>
-
-<input type="radio" id="pj" name="tipo" value="pj">
-<label for="pj">Pessoa Jurídica</label>
-
-</fieldset>
-
-<label for="mensagem">Mensagem</label>
-<textarea id="mensagem" name="mensagem" rows="4" placeholderDigite sua mensagem...>
-
-</textarea>
-
-                <button type="submit">Enviar</button>
-
- </form>
-
-</section>
-        
-
- </main>
-    <footer class="footer" id="contato">
-        Tel: (21)9784-3986<br>
-      cidade nova 200<br>
-        &copy;2026 direitos reservados
+    <footer>
+        <p>&copy; 2026 Minha Loja Online</p>
     </footer>
+    <script src="./js/arquivo.js"></script>
 </body>
 </html>
